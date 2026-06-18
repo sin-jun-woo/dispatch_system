@@ -1,0 +1,47 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: dispatch-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root_dev
+      MYSQL_DATABASE: dispatch_system
+      MYSQL_USER: dispatch
+      MYSQL_PASSWORD: dispatch_dev
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-u", "root", "-proot_dev"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dispatch-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DATABASE_URL: mysql://dispatch:dispatch_dev@mysql:3306/dispatch_system
+      JWT_SECRET: ${JWT_SECRET:-dispatch-dev-jwt-secret-change-me}
+      NODE_ENV: development
+      PORT: 3000
+    volumes:
+      - .:/app
+      - app_node_modules:/app/node_modules
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+volumes:
+  mysql_data:
+  app_node_modules:
