@@ -1,0 +1,1 @@
+ALTER TABLE `drivers` ADD `status` enum('idle','driving','repair') DEFAULT 'idle' NOT NULL;

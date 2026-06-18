@@ -1,0 +1,1 @@
+ALTER TABLE `drivers` ADD `pinHash` varchar(255);

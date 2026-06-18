@@ -1,0 +1,1 @@
+ALTER TABLE `dispatch_orders` ADD `arrivalDeadline` timestamp;

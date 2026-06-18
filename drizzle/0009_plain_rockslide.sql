@@ -1,0 +1,1 @@
+ALTER TABLE `dispatch_orders` MODIFY COLUMN `approvalStatus` enum('pending','confirmed','completed','cancelled') NOT NULL DEFAULT 'pending';

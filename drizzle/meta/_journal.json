@@ -1,0 +1,104 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1781576122531,
+      "tag": "0000_silky_gauntlet",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1781576258062,
+      "tag": "0001_wide_lord_hawal",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1781577314452,
+      "tag": "0002_curved_lockjaw",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1781578055448,
+      "tag": "0003_quiet_jean_grey",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1781579478747,
+      "tag": "0004_noisy_hellfire_club",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1781579634108,
+      "tag": "0005_eager_thunderbolt_ross",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1781584762178,
+      "tag": "0006_short_pride",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1781587775372,
+      "tag": "0007_burly_cerebro",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1781595884363,
+      "tag": "0008_misty_corsair",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "5",
+      "when": 1781604882562,
+      "tag": "0009_plain_rockslide",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "5",
+      "when": 1781624975479,
+      "tag": "0010_dusty_vin_gonzales",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "5",
+      "when": 1781661518650,
+      "tag": "0011_spicy_millenium_guard",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "5",
+      "when": 1781685370080,
+      "tag": "0012_colossal_gateway",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "5",
+      "when": 1781687713291,
+      "tag": "0013_harsh_rattler",
+      "breakpoints": true
+    }
+  ]
+}

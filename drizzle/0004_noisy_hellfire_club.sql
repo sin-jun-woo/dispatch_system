@@ -1,0 +1,2 @@
+ALTER TABLE `dispatch_orders` MODIFY COLUMN `approvalStatus` enum('pending','confirmed','completed') NOT NULL DEFAULT 'pending';--> statement-breakpoint
+ALTER TABLE `dispatch_orders` ADD `completedAt` timestamp;
